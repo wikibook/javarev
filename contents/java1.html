@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+생활코딩! 자바 프로그래밍 입문
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="common.js" ></script>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a class="active" href="java1.html"> JAVA1 편</a></li>
+            <li><a href="control.html">제어문 편</a></li>
+            <li><a href="method.html">메서드 편</a></li>
+            <li><a href="oop.html">객체지향 프로그래밍 편</a></li>
+            <li><a href="inheritance.html">상속 편</a></li>
+        </ul>
+    </nav>
+    <div class="exampleArea">
+        <div>생활코딩 JAVA1<br><a href="https://opentutorials.org/module/4294">https://opentutorials.org/module/4294</a></div>
+        <div>예제 코드 내려받기<br><a href="https://github.com/wikibook/javarev/archive/refs/heads/master.zip">https://github.com/wikibook/javarev/archive/refs/heads/master.zip</a></div>
+    </div>
+    <ul id="contents">
+      <li>
+        <span class="title"><span class="num">01</span>수업 소개</span>
+        <span class="page">4</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>자바 프로그래밍 언어를 소개하고, JAVA1 수업의 목표와 수업 방향을 알아본다.</span></li>
+          <li><span>동영상 강좌</span><a href="https://youtu.be/-dPXqgWQBGE" target="_blank">https://youtu.be/-dPXqgWQBGE</a> (4분 37초) <span class="studyLabel" id="study1" data-study="1">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">02</span>자바 설치하기</span>
+        <span class="page">10</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>온라인에서 자바를 실습할 수 있는 도구인 제이 두들(jdoodle)의 사용법을 살펴보고, 운영체제별로 자바 플랫폼을 설치하는 방법을 안내한다.</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">02-1</span>온라인 실습 환경</span>
+        <span class="page">10</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/hH7R55kPENo" target="_blank">https://youtu.be/hH7R55kPENo</a> (5분 55초) <span class="studyLabel" id="study2" data-study="2">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">02-2</span>macOS에 자바 설치</span>
+        <span class="page">17</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/rO_2l8rw4yc" target="_blank">https://youtu.be/rO_2l8rw4yc</a> (2분 50초) <span class="studyLabel" id="study3" data-study="3">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">02-3</span>리눅스에 자바 설치</span>
+        <span class="page">24</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/e6FnXIK4jbo" target="_blank">https://youtu.be/e6FnXIK4jbo</a> (2분 41초) <span class="studyLabel" id="study4" data-study="4">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">02-4</span>윈도우에 자바 설치</span>
+        <span class="page">28</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/QFtAgesZY_g" target="_blank">https://youtu.be/QFtAgesZY_g</a> (7분 26초) <span class="studyLabel" id="study5" data-study="5">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">03</span>자바 개발환경 설정하기 - 이클립스 설치</span>
+        <span class="page">40</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>자바를 사용할 수 있는 편집기 중 하나인 이클립스를 설치하는 방법을 안내한다.</span></li>
+          <li><span>동영상 강좌</span><a href="https://youtu.be/A69209AzrQo" target="_blank">https://youtu.be/A69209AzrQo</a> (3분 12초) <span class="studyLabel" id="study6" data-study="6">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">04</span>자바 애플리케이션 실행하기</span>
+        <span class="page">47</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>이클립스를 이용해 첫 번째 자바 애플리케이션인 Hello World를 작성하고 실행해 본다. 프로젝트를 생성하는 과정을 자세히 살펴보고, 프로젝트를 생성하는 과정에서 발생할 수 있는 에러와 에러를 해결하는 방법을 살펴본다. </span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">04-1</span>첫 자바 애플리케이션, Hello World</span>
+        <span class="page">47</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/pUqRAHxpxjM" target="_blank">https://youtu.be/pUqRAHxpxjM</a> (12분 38초) <span class="studyLabel" id="study7" data-study="7">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">04-2</span>에러가 발생한다면?</span>
+        <span class="page">60</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/Wtb755nwIwo" target="_blank">https://youtu.be/Wtb755nwIwo</a> (9분 3초) <span class="studyLabel" id="study8" data-study="8">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">04-3</span>자바의 동작 원리</span>
+        <span class="page">72</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/9V0rdrm59X4" target="_blank">https://youtu.be/9V0rdrm59X4</a> (4분 48초) <span class="studyLabel" id="study9" data-study="9">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">05</span>Hello Java World</span>
+        <span class="page">75</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>데스크톱 애플리케이션 만들기, 자바로 사물 제어하기, 안드로이드 애플리케이션 만들기 등 자바로 할 수 있는 일들의 가능성을 느껴본다. </span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">05-1</span>Hello Java World</span>
+        <span class="page">75</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/AuiMh9bGTKI" target="_blank">https://youtu.be/AuiMh9bGTKI</a> (1분 39초) <span class="studyLabel" id="study10" data-study="10">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">05-2</span>데스크톱 애플리케이션 만들기</span>
+        <span class="page">76</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/bZuoyW26zW4" target="_blank">https://youtu.be/bZuoyW26zW4</a> (3분 35초) <span class="studyLabel" id="study11" data-study="11">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">05-3</span>자바로 사물 제어하기</span>
+        <span class="page">80</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/hbk1twmxzF4" target="_blank">https://youtu.be/hbk1twmxzF4</a> (7분 16초) <span class="studyLabel" id="study12" data-study="12">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">05-4</span>안드로이드 애플리케이션 만들기</span>
+        <span class="page">87</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/8Ink45kZTA4" target="_blank">https://youtu.be/8Ink45kZTA4</a> (7분 57초) <span class="studyLabel" id="study13" data-study="13">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">06</span>데이터와 연산</span>
+        <span class="page">102</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>자바에서 제공하는 데이터 타입을 살펴보고, 각 데이터 타입별로 어떤 연산 방법이 있는지 알아본다. 다양한 데이터 타입 중에서 문자열을 표현하는 방법과 문자열을 다루는 방법을 알아본다.</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">06-1</span>데이터와 연산</span>
+        <span class="page">102</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/WWAicgDYBDg" target="_blank">https://youtu.be/WWAicgDYBDg</a> (2분 13초) <span class="studyLabel" id="study14" data-study="14">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">06-2</span>데이터 타입</span>
+        <span class="page">103</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/_D13-YBz4qk" target="_blank">https://youtu.be/_D13-YBz4qk</a> (8분 43초) <span class="studyLabel" id="study15" data-study="15">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">06-3</span>숫자와 연산</span>
+        <span class="page">113</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/3atGGWQYaiU" target="_blank">https://youtu.be/3atGGWQYaiU</a> (8분 11초) <span class="studyLabel" id="study16" data-study="16">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">06-4</span>문자열의 표현</span>
+        <span class="page">120</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/DCa3qo8Pm6E" target="_blank">https://youtu.be/DCa3qo8Pm6E</a> (8분 2초) <span class="studyLabel" id="study17" data-study="17">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">06-5</span>문자열 다루기</span>
+        <span class="page">125</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/y20Fhlseh4w" target="_blank">https://youtu.be/y20Fhlseh4w</a> (4분 44초) <span class="studyLabel" id="study18" data-study="18">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">07</span>작심삼일 공학</span>
+        <span class="page">128</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>작심삼일 전략을 소개한다. 작심삼일이 왔다면 여기서 수업을 과감하게 멈추고 지금까지 배운 것으로 삶의 문제를 해결해 보자.</span></li>
+          <li><span>동영상 강좌</span><a href="https://youtu.be/7D-h_PbJ3I8" target="_blank">https://youtu.be/7D-h_PbJ3I8</a> (4분 49초) <span class="studyLabel" id="study19" data-study="19">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">08</span>변수</span>
+        <span class="page">130</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>변수의 개념을 소개하고 변수를 정의하는 방법을 알아본다. 변수에 데이터 타입을 지정해야 하는 이유와 변수의 효용을 살펴보고, 데이터 타입을 다른 데이터 타입으로 변환하는 방법(형 변환)을 알아본다.</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">08-1</span>변수의 정의</span>
+        <span class="page">130</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/FtWGiWBNJ-I" target="_blank">https://youtu.be/FtWGiWBNJ-I</a> (7분 57초) <span class="studyLabel" id="study20" data-study="20">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">08-2</span>변수의 효용</span>
+        <span class="page">137</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/GUpmH11BF2Y" target="_blank">https://youtu.be/GUpmH11BF2Y</a> (4분 23초) <span class="studyLabel" id="study21" data-study="21">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">08-3</span>데이터 타입의 변환</span>
+        <span class="page">140</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/LeTbH63CpRo" target="_blank">https://youtu.be/LeTbH63CpRo</a> (9분 53초) <span class="studyLabel" id="study22" data-study="22">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">09</span>프로그래밍이란 무엇인가?</span>
+        <span class="page">147</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>프로그래밍, 프로그램, 프로그래머라는 말의 의미를 살펴보고, IoT 프로그램을 만들어 봄으로써 프로그래밍을 통해 많은 일을 자동화할 수 있음을 알아본다.</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">09-1</span>프로그래밍이란 무엇인가?</span>
+        <span class="page">147</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/ejPBOti5omY" target="_blank">https://youtu.be/ejPBOti5omY</a> (4분 48초) <span class="studyLabel" id="study23" data-study="23">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">09-2</span>프로그램 만들기 – IoT 라이브러리 설치하기</span>
+        <span class="page">150</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/GHmzWls2irk" target="_blank">https://youtu.be/GHmzWls2irk</a> (5분 31초) <span class="studyLabel" id="study24" data-study="24">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">09-3</span>IoT 프로그램 만들기</span>
+        <span class="page">157</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/x4LXhjzv8q4" target="_blank">https://youtu.be/x4LXhjzv8q4</a> (11분 59초) <span class="studyLabel" id="study25" data-study="25">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">10</span>디버거</span>
+        <span class="page">167</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>작성한 코드에 의도하지 않은 문제가 발생했을 때 문제를 해결하는 디버깅에 관해 알아보고, 디버깅할 때 사용하는 도구인 디버거를 다루는 방법을 살펴본다.</span></li>
+          <li><span>동영상 강좌</span><a href="https://youtu.be/nUSJaO4khdc" target="_blank">https://youtu.be/nUSJaO4khdc</a> (9분 25초) <span class="studyLabel" id="study26" data-study="26">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">11</span>입력과 출력</span>
+        <span class="page">175</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>프로그래밍에서의 입력과 출력의 개념을 알아보고, 이클립스를 이용해 프로그램을 실행할 때 입력값을 전달받는 방법을 알아본다.</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">11-1</span>입력과 출력</span>
+        <span class="page">175</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/-xllzUahaFQ" target="_blank">https://youtu.be/-xllzUahaFQ</a> (12분 13초) <span class="studyLabel" id="study27" data-study="27">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">11-2</span>입력과 출력: arguments & parameter</span>
+        <span class="page">188</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/66S529MuxpY" target="_blank">https://youtu.be/66S529MuxpY</a> (10분 14초) <span class="studyLabel" id="study28" data-study="28">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">12</span>직접 컴파일하고 실행하기</span>
+        <span class="page">199</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>이클립스 같은 개발 도구를 이용하지 않고 자바 프로그램을 실행하는 방법을 살펴본다. 운영체제별로 직접 만든 자바 프로그램을 컴파일하고 실행하는 방법을 살펴보고, 입력값을 전달해 값에 따라 다르게 동작하는 프로그램을 실행하는 방법도 살펴본다.</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">12-1</span>직접 컴파일하고 실행하기: 소개</span>
+        <span class="page">199</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/1YbZmwh9ziU" target="_blank">https://youtu.be/1YbZmwh9ziU</a> (4분 20초) <span class="studyLabel" id="study29" data-study="29">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">12-2</span>직접 컴파일하고 실행하기: 실행 환경 살펴보기</span>
+        <span class="page">204</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/63zfmC1uL0g" target="_blank">https://youtu.be/63zfmC1uL0g</a> (8분 48초) <span class="studyLabel" id="study30" data-study="30">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">12-3</span>직접 컴파일하고 실행하기: 컴파일과 실행하기</span>
+        <span class="page">221</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/2foYALda07o" target="_blank">https://youtu.be/2foYALda07o</a> (5분 39초) <span class="studyLabel" id="study31" data-study="31">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">12-4</span>직접 컴파일하고 실행하기: 라이브러리 이용</span>
+        <span class="page">226</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/uj2mOvjhj4o" target="_blank">https://youtu.be/uj2mOvjhj4o</a> (9분 3초) <span class="studyLabel" id="study32" data-study="32">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">12-5</span>직접 컴파일하고 실행하기 – 입력과 출력</span>
+        <span class="page">233</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/KMFJ7AZQSeI" target="_blank">https://youtu.be/KMFJ7AZQSeI</a> (4분 51초) <span class="studyLabel" id="study33" data-study="33">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">13</span>자바 문서 보는 법</span>
+        <span class="page">236</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>API와 라이브러리, UI의 개념을 살펴보고, 자바의 공식 사용 설명서를 살펴보면서 클래스, 인스턴스, 상속에 관해 알아본다.</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">13-1</span>자바 문서 보는 법 – API vs. UI</span>
+        <span class="page">236</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/V2PXRfKoCSU" target="_blank">https://youtu.be/V2PXRfKoCSU</a> (3분 55초) <span class="studyLabel" id="study34" data-study="34">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">13-2</span>자바 문서 보는 법 - 패키지,클래스,변수,메서드</span>
+        <span class="page">239</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/kSH6-DU68fo" target="_blank">https://youtu.be/kSH6-DU68fo</a> (4분 26초) <span class="studyLabel" id="study35" data-study="35">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">13-3</span>자바 문서 보는 법 - 클래스</span>
+        <span class="page">244</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/5z5OBTWLeQY" target="_blank">https://youtu.be/5z5OBTWLeQY</a> (4분 14초) <span class="studyLabel" id="study36" data-study="36">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">13-4</span>자바 문서 보는 법 - 인스턴스</span>
+        <span class="page">248</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/NoXg98bgjT4" target="_blank">https://youtu.be/NoXg98bgjT4</a> (11분 26초) <span class="studyLabel" id="study37" data-study="37">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">13-5</span>자바 문서 보는 법 - 상속</span>
+        <span class="page">257</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/LdWx-kHRoH4" target="_blank">https://youtu.be/LdWx-kHRoH4</a> (8분 56초) <span class="studyLabel" id="study38" data-study="38">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">14</span>나의 앱 만들기</span>
+        <span class="page">267</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>지금까지 배운 내용만으로 나만의 애플리케이션을 만들어본다. 최소한으로 배워서 최대한으로 사용하는 사례를 살펴보면서 지금까지 배운 것만으로도 충분히 많은 일을 할 수 있음을 경험한다.</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-1</span>나의 앱 만들기 - 오리엔테이션</span>
+        <span class="page">267</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/mphrv80VaQI" target="_blank">https://youtu.be/mphrv80VaQI</a> (6분 53초) <span class="studyLabel" id="study39" data-study="39">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-2</span>나의 앱 만들기 – 기본 기능 구현</span>
+        <span class="page">273</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/RSTVfycyssA" target="_blank">https://youtu.be/RSTVfycyssA</a> (8분 56초) <span class="studyLabel" id="study40" data-study="40">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-3</span>나의 앱 만들기 – 변수 도입</span>
+        <span class="page">282</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/7Wg74I0QLaE" target="_blank">https://youtu.be/7Wg74I0QLaE</a> (7분 13초) <span class="studyLabel" id="study41" data-study="41">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-4</span>나의 앱 만들기 – 입력값 도입</span>
+        <span class="page">290</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/iYPQ20VgQUU" target="_blank">https://youtu.be/iYPQ20VgQUU</a> (8분 29초) <span class="studyLabel" id="study42" data-study="42">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-5</span>나의 앱 만들기 - 오리엔테이션 2</span>
+        <span class="page">303</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/7s13YHf3MAI" target="_blank">https://youtu.be/7s13YHf3MAI</a> (4분 27초) <span class="studyLabel" id="study43" data-study="43">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-6</span>나의 앱 만들기 - 조건문</span>
+        <span class="page">305</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/y-qUWhanlkM" target="_blank">https://youtu.be/y-qUWhanlkM</a> (6분 19초) <span class="studyLabel" id="study44" data-study="44">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-7</span>나의 앱 만들기 - 배열</span>
+        <span class="page">313</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/sMBu20ZZwzE" target="_blank">https://youtu.be/sMBu20ZZwzE</a> (6분 46초) <span class="studyLabel" id="study45" data-study="45">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-8</span>나의 앱 만들기 - 반복문</span>
+        <span class="page">319</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/4-5tmh5Krk8" target="_blank">https://youtu.be/4-5tmh5Krk8</a> (6분 39초) <span class="studyLabel" id="study46" data-study="46">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-9</span>나의 앱 만들기 - 메서드</span>
+        <span class="page">325</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/XXFaCUcwWIk" target="_blank">https://youtu.be/XXFaCUcwWIk</a> (12분 38초) <span class="studyLabel" id="study47" data-study="47">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-10</span>나의 앱 만들기 - 클래스</span>
+        <span class="page">340</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/l8hrA4VSIlA" target="_blank">https://youtu.be/l8hrA4VSIlA</a> (6분 56초) <span class="studyLabel" id="study48" data-study="48">학습 중</span></li>
+        </ul>
+      </li>
+      <li class="indent">
+        <span class="title"><span class="num">14-11</span>나의 앱 만들기 - 인스턴스</span>
+        <span class="page">347</span>
+        <ul class="detail">
+          <li><span>동영상 강좌</span><a href="https://youtu.be/TOptBzGgJOw" target="_blank">https://youtu.be/TOptBzGgJOw</a> (9분 54초) <span class="studyLabel" id="study49" data-study="49">학습 중</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="title"><span class="num">15</span>수업을 마치며</span>
+        <span class="page">355</span>
+        <ul class="detail">
+          <li><span>학습목표</span><span>JAVA1 수업을 정리하고, 앞으로 공부해 볼 만한 자료를 소개한다.</span></li>
+          <li><span>동영상 강좌</span><a href="https://youtu.be/qTcn-a3vo6E" target="_blank">https://youtu.be/qTcn-a3vo6E</a> (8분 1초) <span class="studyLabel" id="study50" data-study="50">학습 중</span></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
