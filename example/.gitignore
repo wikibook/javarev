@@ -1,1 +1,6 @@
 *.class
+*.classpath
+*.project
+*.prefs
+*.DS_Store
+*.metadata
